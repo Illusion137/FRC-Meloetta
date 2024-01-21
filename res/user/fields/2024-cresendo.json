@@ -1,0 +1,399 @@
+{
+  "game": "Cresendo",
+  "field_image": "2024-field.png",
+  "april_tags": [
+    {
+      "id": 1,
+      "translation": {
+        "x": 593.68,
+        "y": 314.634,
+        "z": 53.38
+      },
+      "rotation": 2.09439510239
+    },
+    {
+      "id": 2,
+      "translation": {
+        "x": 637.21,
+        "y": 289.524,
+        "z": 53.38
+      },
+      "rotation": 2.09439510239
+    },
+    {
+      "id": 3,
+      "translation": {
+        "x": 652.73,
+        "y": 118.144,
+        "z": 57.13
+      },
+      "rotation": 3.14159265359
+    },
+    {
+      "id": 4,
+      "translation": {
+        "x": 652.73,
+        "y": 105.894,
+        "z": 57.13
+      },
+      "rotation": 3.14159265359
+    },
+    {
+      "id": 5,
+      "translation": {
+        "x": 578.77,
+        "y": 1.113,
+        "z": 53.38
+      },
+      "rotation": 4.71238898038
+    },
+    {
+      "id": 6,
+      "translation": {
+        "x": 72.5,
+        "y": 1.113,
+        "z": 53.38
+      },
+      "rotation": 4.71238898038
+    },
+    {
+      "id": 7,
+      "translation": {
+        "x": -1.5,
+        "y": 105.894,
+        "z": 57.13
+      },
+      "rotation": 0
+    },
+    {
+      "id": 8,
+      "translation": {
+        "x": -1.5,
+        "y": 118.144,
+        "z": 57.13
+      },
+      "rotation": 0
+    },
+    {
+      "id": 9,
+      "translation": {
+        "x": 14.02,
+        "y": 289.524,
+        "z": 53.38
+      },
+      "rotation": 1.0471975512
+    },
+    {
+      "id": 10,
+      "translation": {
+        "x": 57.54,
+        "y": 314.634,
+        "z": 53.38
+      },
+      "rotation": 1.0471975512
+    },
+    {
+      "id": 11,
+      "translation": {
+        "x": 468.69,
+        "y": 178.124,
+        "z": 52
+      },
+      "rotation": 5.23598775598
+    },
+    {
+      "id": 12,
+      "translation": {
+        "x": 468.69,
+        "y": 147.214,
+        "z": 52
+      },
+      "rotation": 1.0471975512
+    },
+    {
+      "id": 13,
+      "translation": {
+        "x": 441.74,
+        "y": 161.620,
+        "z": 52
+      },
+      "rotation": 3.14159265359
+    },
+    {
+      "id": 14,
+      "translation": {
+        "x": 209.48,
+        "y": 161.620,
+        "z": 52
+      },
+      "rotation": 0
+    },
+    {
+      "id": 15,
+      "translation": {
+        "x": 182.73,
+        "y": 147.214,
+        "z": 52
+      },
+      "rotation": 2.09439510239
+    },
+    {
+      "id": 16,
+      "translation": {
+        "x": 182.73,
+        "y": 178.124,
+        "z": 52
+      },
+      "rotation": 4.18879020479
+    }
+  ],
+  "field_dimensions": {
+    "length": 653.219,
+    "width": 324.314
+  },
+  "field_obstacles": [
+    {
+      "name": "blue_amp-front",
+      "point_1": {
+        "x": 0.5,
+        "y": 126.4
+      },
+      "point_2": {
+        "x": 36.5,
+        "y": 84.5
+      },
+      "type": "box"
+    },
+    {
+      "name": "blue_amp-side-1",
+      "point_1": {
+        "x": 0.5,
+        "y": 147
+      },
+      "point_2": {
+        "x": 36.5,
+        "y": 126.4
+      },
+      "type": "line"
+    },
+    {
+      "name": "blue_amp-side-2",
+      "point_1": {
+        "x": 0.5,
+        "y": 63
+      },
+      "point_2": {
+        "x": 36.5,
+        "y": 84.5
+      },
+      "type": "line"
+    },
+    {
+      "name": "red-source",
+      "point_1": {
+        "x": 74,
+        "y": 324.50
+      },
+      "point_2": {
+        "x": 0.5,
+        "y": 282.0
+      },
+      "type": "line"
+    },
+    {
+      "name": "blue-stage-pillar-1",
+      "point_1": {
+        "x": 126.5,
+        "y": 155.50
+      },
+      "point_2": {
+        "x": 139.5,
+        "y": 168.50
+      },
+      "type": "box"
+    },
+    {
+      "name": "red_amp-front",
+      "point_1": {
+        "x": 651.25,
+        "y": 126.40
+      },
+      "point_2": {
+        "x": 615.75,
+        "y": 84.50
+      },
+      "type": "box"
+    },
+    {
+      "name": "red_amp-side-1",
+      "point_1": {
+        "x": 651.25,
+        "y": 147
+      },
+      "point_2": {
+        "x": 615.75,
+        "y": 126.40
+      },
+      "type": "line"
+    },
+    {
+      "name": "red_amp-side-2",
+      "point_1": {
+        "x": 651.25,
+        "y": 63
+      },
+      "point_2": {
+        "x": 615.75,
+        "y": 84.50
+      },
+      "type": "line"
+    },
+    {
+      "name": "blue-source",
+      "point_1": {
+        "x": 578.25,
+        "y": 324.50
+      },
+      "point_2": {
+        "x": 652,
+        "y": 282
+      },
+      "type": "line"
+    },
+    {
+      "name": "red-stage-pillar-1",
+      "point_1": {
+        "x": 512.5,
+        "y": 155.5
+      },
+      "point_2": {
+        "x": 525.5,
+        "y": 168.5
+      },
+      "type": "box"
+    }
+  ],
+  "field_initial_game_pieces": [
+    {
+      "name": "blue-ring-1",
+      "point_1": {
+        "x": 107,
+        "y": 155.25
+      },
+      "point_2": {
+        "x": 121,
+        "y": 169.25
+      }
+    },
+    {
+      "name": "blue-ring-2",
+      "point_1": {
+        "x": 107,
+        "y": 98.00
+      },
+      "point_2": {
+        "x": 121,
+        "y": 112.00
+      }
+    },
+    {
+      "name": "blue-ring-3",
+      "point_1": {
+        "x": 107,
+        "y": 41.00
+      },
+      "point_2": {
+        "x": 121,
+        "y": 55.00
+      }
+    },
+    {
+      "name": "center-ring-1",
+      "point_1": {
+        "x": 319,
+        "y": 22.5
+      },
+      "point_2": {
+        "x": 333,
+        "y": 36.5
+      }
+    },
+    {
+      "name": "center-ring-2",
+      "point_1": {
+        "x": 319,
+        "y": 88.75
+      },
+      "point_2": {
+        "x": 333,
+        "y": 102.75
+      }
+    },
+    {
+      "name": "center-ring-3",
+      "point_1": {
+        "x": 319,
+        "y": 155
+      },
+      "point_2": {
+        "x": 333,
+        "y": 169
+      }
+    },
+    {
+      "name": "center-ring-4",
+      "point_1": {
+        "x": 319,
+        "y": 221.25
+      },
+      "point_2": {
+        "x": 333,
+        "y": 235.25
+      }
+    },
+    {
+      "name": "center-ring-5",
+      "point_1": {
+        "x": 319,
+        "y": 287.5
+      },
+      "point_2": {
+        "x": 333,
+        "y": 301.5
+      }
+    },
+    {
+      "name": "red-ring-1",
+      "point_1": {
+        "x": 531,
+        "y": 155.25
+      },
+      "point_2": {
+        "x": 545,
+        "y": 169.25
+      }
+    },
+    {
+      "name": "red-ring-2",
+      "point_1": {
+        "x": 531,
+        "y": 98.00
+      },
+      "point_2": {
+        "x": 545,
+        "y": 112.00
+      }
+    },
+    {
+      "name": "red-ring-3",
+      "point_1": {
+        "x": 531,
+        "y": 41.00
+      },
+      "point_2": {
+        "x": 545,
+        "y": 55.00
+      }
+    }
+  ]
+}

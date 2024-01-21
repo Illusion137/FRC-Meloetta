@@ -1,0 +1,18 @@
+{
+  "host_types": [
+    "DriverStation",
+    "Simulation",
+    "None"
+  ],
+  "host_type": 1,
+  "entries": [
+    "april_tag_estimated_pose",
+    "odometry_estimated_pose",
+    "camera_rot",
+    "robot_rot",
+    "alerts",
+    "sim_robots_swerve_modules",
+    "fgear_best_camera_rot",
+    "mod_values"
+  ]
+}
