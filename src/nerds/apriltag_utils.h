@@ -18,6 +18,9 @@
 #include <opencv2/imgcodecs.hpp>
 #include <units/angle.h>
 #include <units/length.h>
+#include <units/math.h>
+
+#include <photon/PhotonPoseEstimator.h>
 
 namespace nerds {
     struct AprilTagDetectionData {

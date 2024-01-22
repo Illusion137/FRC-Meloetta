@@ -106,13 +106,14 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>lib\imgui-docking\imgui;lib\nlohmann_json\include;lib\glfw\include;lib\imgui-docking\backends;lib\ntcore;lib\ntcore\networktables;lib\wpinet\;lib\wpiutil;lib\wpimath;lib\wpimath\wpimath;lib\;lib\opencv2\;lib\frc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>lib\imgui-docking\imgui;lib\nlohmann_json\include;lib\glfw\include;lib\imgui-docking\backends;lib\ntcore;lib\ntcore\networktables;lib\wpinet\;lib\wpiutil;lib\wpimath;lib\wpimath\wpimath;lib\;lib\opencv2\;lib\frc\;lib\photonlib;lib\photontargeting;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>lib\glfw\lib-vc2022;lib\wpilib_static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ntcore.lib;wpinet.lib;wpiutil.lib;opengl32.lib;glfw3.lib;apriltag.lib;opencv_world480.lib;opencv_world480d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ntcore.lib;wpinet.lib;wpiutil.lib;opengl32.lib;glfw3.lib;wpimath.lib;apriltag.lib;opencv_world480.lib;opencv_world480d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
@@ -127,7 +128,8 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>lib\imgui-docking\imgui;lib\nlohmann_json\include;lib\glfw\include;lib\imgui-docking\backends;lib\ntcore;lib\ntcore\networktables;lib\wpinet\;lib\wpiutil;lib\wpimath;lib\wpimath\wpimath;lib\;lib\opencv2\;lib\frc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>lib\imgui-docking\imgui;lib\nlohmann_json\include;lib\glfw\include;lib\imgui-docking\backends;lib\ntcore;lib\ntcore\networktables;lib\wpinet\;lib\wpiutil;lib\wpimath;lib\wpimath\wpimath;lib\;lib\opencv2\;lib\frc\;lib\photonlib;lib\photontargeting;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,7 +137,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>lib\glfw\lib-vc2022;lib\wpilib_static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ntcore.lib;wpinet.lib;wpiutil.lib;opengl32.lib;glfw3.lib;apriltag.lib;opencv_world480.lib;opencv_world480d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ntcore.lib;wpinet.lib;wpiutil.lib;opengl32.lib;glfw3.lib;wpimath.lib;apriltag.lib;opencv_world480.lib;opencv_world480d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
@@ -158,6 +160,7 @@
     <ClCompile Include="src\vendor\stb_image.cpp" />
     <ClCompile Include="src\vendor\zorua\textures.cpp" />
     <ClCompile Include="src\widgets.cpp" />
+    <ClCompile Include="src\widgets\widgets_swerve_drive.cpp" />
     <ClCompile Include="src\widgets\widget_alerts.cpp" />
     <ClCompile Include="src\widgets\widget_game_field.cpp" />
     <ClCompile Include="src\widgets\widget_network_tables.cpp" />
@@ -171,6 +174,7 @@
     <ClInclude Include="lib\frc\apriltag\AprilTagFields.h" />
     <ClInclude Include="lib\frc\apriltag\AprilTagPoseEstimate.h" />
     <ClInclude Include="lib\frc\apriltag\AprilTagPoseEstimator.h" />
+    <ClInclude Include="lib\frc\Errors.h" />
     <ClInclude Include="lib\imgui-docking\backends\imgui_impl_glfw.h" />
     <ClInclude Include="lib\imgui-docking\backends\imgui_impl_opengl3.h" />
     <ClInclude Include="lib\imgui-docking\backends\imgui_impl_opengl3_loader.h" />
@@ -584,6 +588,35 @@
     <ClInclude Include="lib\opencv2\video\tracking.hpp" />
     <ClInclude Include="lib\opencv2\video\video.hpp" />
     <ClInclude Include="lib\opencv2\world.hpp" />
+    <ClInclude Include="lib\photonlib\PhotonVersion.h" />
+    <ClInclude Include="lib\photonlib\photon\PhotonCamera.h" />
+    <ClInclude Include="lib\photonlib\photon\PhotonPoseEstimator.h" />
+    <ClInclude Include="lib\photonlib\photon\PhotonTargetSortMode.h" />
+    <ClInclude Include="lib\photonlib\photon\PhotonUtils.h" />
+    <ClInclude Include="lib\photonlib\photon\simulation\PhotonCameraSim.h" />
+    <ClInclude Include="lib\photonlib\photon\simulation\SimCameraProperties.h" />
+    <ClInclude Include="lib\photonlib\photon\simulation\SimPhotonCamera.h" />
+    <ClInclude Include="lib\photonlib\photon\simulation\SimVisionSystem.h" />
+    <ClInclude Include="lib\photonlib\photon\simulation\SimVisionTarget.h" />
+    <ClInclude Include="lib\photonlib\photon\simulation\VideoSimUtil.h" />
+    <ClInclude Include="lib\photonlib\photon\simulation\VisionSystemSim.h" />
+    <ClInclude Include="lib\photonlib\photon\simulation\VisionTargetSim.h" />
+    <ClInclude Include="lib\photontargeting\geometry3d.pb.h" />
+    <ClInclude Include="lib\photontargeting\photon\dataflow\structures\Packet.h" />
+    <ClInclude Include="lib\photontargeting\photon\estimation\CameraTargetRelation.h" />
+    <ClInclude Include="lib\photontargeting\photon\estimation\OpenCVHelp.h" />
+    <ClInclude Include="lib\photontargeting\photon\estimation\RotTrlTransform3d.h" />
+    <ClInclude Include="lib\photontargeting\photon\estimation\TargetModel.h" />
+    <ClInclude Include="lib\photontargeting\photon\estimation\VisionEstimation.h" />
+    <ClInclude Include="lib\photontargeting\photon\networktables\NTTopicSet.h" />
+    <ClInclude Include="lib\photontargeting\photon\targeting\MultiTargetPNPResult.h" />
+    <ClInclude Include="lib\photontargeting\photon\targeting\PhotonPipelineResult.h" />
+    <ClInclude Include="lib\photontargeting\photon\targeting\PhotonTrackedTarget.h" />
+    <ClInclude Include="lib\photontargeting\photon\targeting\PNPResult.h" />
+    <ClInclude Include="lib\photontargeting\photon\targeting\proto\MultiTargetPNPResultProto.h" />
+    <ClInclude Include="lib\photontargeting\photon\targeting\proto\PhotonPipelineResultProto.h" />
+    <ClInclude Include="lib\photontargeting\photon\targeting\proto\PhotonTrackedTargetProto.h" />
+    <ClInclude Include="lib\photontargeting\photon\targeting\proto\PNPResultProto.h" />
     <ClInclude Include="lib\rapidjson\include\rapidjson\allocators.h" />
     <ClInclude Include="lib\rapidjson\include\rapidjson\document.h" />
     <ClInclude Include="lib\rapidjson\include\rapidjson\encodedstream.h" />
@@ -1523,8 +1556,11 @@
     <ClInclude Include="src\widgets_interfaces.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="2024-cresendo.json" />
     <None Include="apriltag.dll" />
     <None Include="imgui.ini" />
+    <None Include="lib\frc\WPIErrors.mac" />
+    <None Include="lib\frc\WPIWarnings.mac" />
     <None Include="lib\ntcore\networktables\BooleanArrayTopic.inc" />
     <None Include="lib\ntcore\networktables\BooleanTopic.inc" />
     <None Include="lib\ntcore\networktables\DoubleArrayTopic.inc" />

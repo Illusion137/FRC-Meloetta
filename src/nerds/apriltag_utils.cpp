@@ -1,4 +1,4 @@
-#include "apriltag_utils.h"
+    #include "apriltag_utils.h"
 
 std::vector<nerds::AprilTagDetectionData> nerds::apriltag_vision_from_file(const std::string& file_path) {
     frc::AprilTagDetector detector;
@@ -142,6 +142,9 @@ void nerds::webcam_apriltag_vision_test() {
     cv::Mat frame, greyFrame;
     cv::Scalar outlineColor{ 0, 255, 0 };
     cv::Scalar crossColor{ 0, 0, 255 };
+
+    frc::AprilTagFieldLayout field_layout("2024-cresendo.json");
+
     for (;;) {
         cap.read(frame);
 
@@ -182,24 +185,38 @@ void nerds::webcam_apriltag_vision_test() {
 
             // put pose into NT
             frc::Rotation3d rotation = pose.Rotation();
-            putText(frame, std::to_string(pose.X().value() * 39.3701),
-                cv::Point(10, 50), cv::FONT_HERSHEY_SIMPLEX, 1,
-                crossColor, 3);
-            putText(frame, std::to_string(pose.Y().value() * 39.3701),
-                cv::Point(10, 100), cv::FONT_HERSHEY_SIMPLEX, 1,
-                crossColor, 3);
-            putText(frame, std::to_string(pose.Z().value() * 39.3701),
-                cv::Point(10, 150), cv::FONT_HERSHEY_SIMPLEX, 1,
-                crossColor, 3);
-            putText(frame, std::to_string(rotation.X().value() * 180 / IM_PI),
-                cv::Point(10, 200), cv::FONT_HERSHEY_SIMPLEX, 1,
-                crossColor, 3);
-            putText(frame, std::to_string(rotation.Y().value() * 180 / IM_PI),
-                cv::Point(10, 250), cv::FONT_HERSHEY_SIMPLEX, 1,
-                crossColor, 3);
-            putText(frame, std::to_string(rotation.Z().value() * 180 / IM_PI),
-                cv::Point(10, 300), cv::FONT_HERSHEY_SIMPLEX, 1,
-                crossColor, 3);
+            {
+
+                putText(frame, std::to_string(pose.X().value() * 39.3701),
+                    cv::Point(10, 50), cv::FONT_HERSHEY_SIMPLEX, 1,
+                    crossColor, 3);
+                putText(frame, std::to_string(pose.Y().value() * 39.3701),
+                    cv::Point(10, 100), cv::FONT_HERSHEY_SIMPLEX, 1,
+                    crossColor, 3);
+                putText(frame, std::to_string(pose.Z().value() * 39.3701),
+                    cv::Point(10, 150), cv::FONT_HERSHEY_SIMPLEX, 1,
+                    crossColor, 3);
+                putText(frame, std::to_string(rotation.X().value() * 180 / IM_PI),
+                    cv::Point(10, 200), cv::FONT_HERSHEY_SIMPLEX, 1,
+                    crossColor, 3);
+                putText(frame, std::to_string(rotation.Y().value() * 180 / IM_PI),
+                    cv::Point(10, 250), cv::FONT_HERSHEY_SIMPLEX, 1,
+                    crossColor, 3);
+                putText(frame, std::to_string(rotation.Z().value() * 180 / IM_PI),
+                    cv::Point(10, 300), cv::FONT_HERSHEY_SIMPLEX, 1,
+                    crossColor, 3);
+
+            }
+            
+            auto tracked_target = photon::PhotonTrackedTarget();
+            std::vector<photon::PhotonTrackedTarget> tracked_targets = { tracked_target };
+            auto pipeline_result = photon::PhotonPipelineResult(20_ms, tracked_targets);
+            photon::PhotonPoseEstimator pose_estimator = photon::PhotonPoseEstimator(field_layout, photon::PoseStrategy::AVERAGE_BEST_TARGETS, frc::Transform3d());
+            pose_estimator.Update(pipeline_result);
+            
+            //putText(frame, std::to_string(rotation.Z().value() * 180 / IM_PI),
+                //cv::Point(300, 50), cv::FONT_HERSHEY_SIMPLEX, 1,
+                //crossColor, 3);
         }
         cv::waitKey(1);
         cv::imshow("AprilTags :3", frame);

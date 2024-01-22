@@ -57,13 +57,22 @@
     <ClCompile Include="src\vendor\zorua\textures.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\fs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\imgui\imrotate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\imgui\imvec2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nerds\apriltag_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\fs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\widgets_swerve_drive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -219,9 +228,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\nerds\game_field.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\fs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\imgui\imrotate.h">
@@ -1463,6 +1469,2778 @@
     <ClInclude Include="src\nerds\network_table_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="lib\frc\apriltag\AprilTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\frc\apriltag\AprilTagDetection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\frc\apriltag\AprilTagDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\frc\apriltag\AprilTagDetector_cv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\frc\apriltag\AprilTagFieldLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\frc\apriltag\AprilTagFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\frc\apriltag\AprilTagPoseEstimate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\frc\apriltag\AprilTagPoseEstimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\calib3d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\calib3d\calib3d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\calib3d\calib3d_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\affine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\async.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\base.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\bindings_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\bufferpool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\check.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\core_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\block.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\border_interpolate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\color.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\datamov_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\detail\color_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\detail\reduce.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\detail\reduce_key_val.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\detail\transform_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\detail\type_traits_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\detail\vec_distance_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\dynamic_smem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\emulation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\filters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\funcattrib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\functional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\limits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\reduce.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\saturate_cast.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\scan.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\simd_functions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\transform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\type_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\vec_distance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\vec_math.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\vec_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\warp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\warp_reduce.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda\warp_shuffle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda_stream_accessor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cuda_types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cvdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cvstd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cvstd.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cvstd_wrapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cv_cpu_dispatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\cv_cpu_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\detail\async_promise.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\detail\dispatch_helper.impl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\detail\exception_ptr.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\directx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\dualquaternion.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\dualquaternion.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\eigen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\fast_math.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\hal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_avx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_avx512.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_cpp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_forward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_lasx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_msa.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_neon.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_rvv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_rvv071.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_rvv_010_compat_non-policy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_rvv_010_compat_overloaded-non-policy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_rvv_compat_overloaded.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_rvv_scalable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_sse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_sse_em.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_vsx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\intrin_wasm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\msa_macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\hal\simd_utils.impl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\llapi\llapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\mat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\mat.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\matx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\neon_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\ocl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\ocl_genbase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\ocl_defs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\opencl_info.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\opencl_svm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\autogenerated\opencl_clblas.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\autogenerated\opencl_clfft.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\autogenerated\opencl_core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\autogenerated\opencl_core_wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\autogenerated\opencl_gl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\autogenerated\opencl_gl_wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_clblas.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_clfft.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_core_wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_gl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_gl_wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_svm_20.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_svm_definitions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opencl\runtime\opencl_svm_hsa_extension.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\opengl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\openvx\ovx_defs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\operations.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\optim.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\ovx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\parallel\backend\parallel_for.openmp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\parallel\backend\parallel_for.tbb.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\parallel\parallel_backend.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\persistence.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\private.cuda.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\private\cv_cpu_include_simd_declarations.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\quaternion.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\quaternion.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\saturate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\simd_intrinsics.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\softfloat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\sse_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\types_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\allocator_stats.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\allocator_stats.impl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\buffer_area.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\configuration.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\filesystem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\filesystem.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\fp_control.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\fp_control_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\instrumentation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\lock.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\logger.defines.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\logger.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\logtag.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\plugin_loader.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\tls.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\trace.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\utils\trace.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\va_intel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\core\vsx_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\all_layers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\dict.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\dnn.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\dnn.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\layer.details.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\layer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\layer_reg.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\shape_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\utils\debug_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\utils\inference_engine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\dnn\version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\features2d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\features2d\features2d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\features2d\hal\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\all_indices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\any.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\autotuned_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\composite_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\dist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\dummy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\dynamic_bitset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\flann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\flann_base.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\general.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\ground_truth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\hdf5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\hierarchical_clustering_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\index_testing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\kdtree_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\kdtree_single_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\kmeans_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\linear_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\lsh_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\lsh_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\miniflann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\nn_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\object_factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\result_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\sampling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\saving.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\simplex_downhill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\flann\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\cpu\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\cpu\gcpukernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\cpu\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\cpu\stereo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\cpu\video.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\fluid\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\fluid\gfluidbuffer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\fluid\gfluidkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\fluid\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\garg.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\garray.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gasync_context.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gcall.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gcommon.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gcompiled.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gcompiled_async.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gcompoundkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gcomputation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gcomputation_async.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gframe.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gmat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gmetaarg.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gopaque.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gproto.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gpu\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gpu\ggpukernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gpu\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gscalar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gstreaming.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gtransform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gtyped.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\gtype_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\infer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\infer\bindings_ie.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\infer\bindings_onnx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\infer\bindings_ov.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\infer\ie.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\infer\onnx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\infer\ov.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\infer\parsers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\media.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\oak\infer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\oak\oak.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\ocl\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\ocl\goclkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\ocl\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\opencv_includes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\operators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\own\assert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\own\convert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\own\cvdefs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\own\exports.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\own\mat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\own\saturate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\own\scalar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\own\types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\plaidml\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\plaidml\gplaidmlkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\plaidml\plaidml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\python\python.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\render.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\render\render.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\render\render_types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\rmat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\s11n.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\s11n\base.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\stereo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\cap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\desync.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\format.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\gstreamer\gstreamerpipeline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\gstreamer\gstreamersource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\meta.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\onevpl\accel_types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\onevpl\cfg_params.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\onevpl\data_provider_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\onevpl\default.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\onevpl\device_selector_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\onevpl\source.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\source.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\streaming\sync.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\util\any.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\util\compiler_hints.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\util\copy_through_move.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\util\optional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\util\throw.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\util\type_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\util\util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\util\variant.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\gapi\video.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\highgui.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\highgui\highgui.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\highgui\highgui_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\highgui\highgui_winrt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgcodecs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgcodecs\imgcodecs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgcodecs\imgcodecs_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgcodecs\ios.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgcodecs\legacy\constants_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgcodecs\macosx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc\bindings.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc\detail\gcgraph.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc\hal\hal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc\hal\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc\imgproc_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc\segmentation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\imgproc\types_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ml\ml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ml\ml.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\aruco_board.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\aruco_detector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\aruco_dictionary.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\barcode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\charuco_detector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\detection_based_tracker.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\face.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\graphical_code_detector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\objdetect\objdetect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\opencv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\opencv_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\photo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\photo\cuda.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\photo\legacy\constants_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\photo\photo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\autocalib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\blenders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\camera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\exposure_compensate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\matchers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\motion_estimators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\seam_finders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\timelapsers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\util_inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\warpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\detail\warpers_inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\stitching\warpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ts.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ts\cuda_perf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ts\cuda_test.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ts\ocl_perf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ts\ocl_test.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ts\ts_ext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ts\ts_gtest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\ts\ts_perf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\video.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio\cap_ios.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio\cap_winrt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio\container_avi.private.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio\doc\hwaccel.doc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio\legacy\constants_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio\registry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio\videoio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\videoio\videoio_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\video\background_segm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\video\detail\tracking.detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\video\legacy\constants_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\video\tracking.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\video\video.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\opencv2\world.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Cholesky\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Cholesky\LDLT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Cholesky\LLT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\AVX\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\AVX\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\AVX\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\AVX\TypeCasting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\Default\BFloat16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\Default\ConjHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\Default\GenericPacketMathFunctionsFwd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\Default\Half.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\Default\Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\NEON\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\NEON\GeneralBlockPanelKernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\NEON\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\NEON\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\NEON\TypeCasting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\NEON\UnaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\SSE\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\SSE\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\SSE\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\arch\SSE\TypeCasting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\ArithmeticSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\ArrayBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\ArrayWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Assign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\AssignEvaluator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\BandMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\CommaInitializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\ConditionEstimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\CoreEvaluators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\CoreIterators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\CwiseBinaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\CwiseNullaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\CwiseTernaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\CwiseUnaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\CwiseUnaryView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\DenseBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\DenseCoeffsBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\DenseStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Diagonal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\DiagonalMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\DiagonalProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Dot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\EigenBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\ForceAlignedAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\functors\AssignmentFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\functors\BinaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\functors\NullaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\functors\StlFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\functors\TernaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\functors\UnaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Fuzzy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\GeneralProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\GenericPacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\GlobalFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\IndexedView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Inverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\IO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\MapBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\MathFunctionsImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\MatrixBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\NestByValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\NoAlias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\NumTraits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\PartialReduxEvaluator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\PermutationMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\PlainObjectBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Product.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\ProductEvaluators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\GeneralBlockPanelKernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\GeneralMatrixMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\GeneralMatrixMatrixTriangular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\GeneralMatrixVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\Parallelizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\SelfadjointMatrixMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\SelfadjointMatrixVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\SelfadjointProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\SelfadjointRank2Update.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\TriangularMatrixMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\TriangularMatrixVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\TriangularSolverMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\products\TriangularSolverVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Redux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Ref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Replicate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Reshaped.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\ReturnByValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Reverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Select.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\SelfAdjointView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\SelfCwiseBinaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\SkewSymmetricMatrix3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Solve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\SolverBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\SolveTriangular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\StableNorm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\StlIterators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Stride.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Swap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Transpose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Transpositions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\TriangularMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\Assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\BlasUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\ConfigureVectorization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\DisableStupidWarnings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\EmulateArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\ForwardDeclarations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\IndexedViewHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\IntegralConstant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\MaxSizeVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\Memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\Meta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\MoreMeta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\ReenableStupidWarnings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\ReshapedHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\Serializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\StaticAssert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\SymbolicIndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\util\XprHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\VectorBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\VectorwiseOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Core\Visitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\ComplexEigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\ComplexSchur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\EigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\GeneralizedEigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\GeneralizedSelfAdjointEigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\HessenbergDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\MatrixBaseEigenvalues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\RealQZ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\RealSchur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\SelfAdjointEigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Eigenvalues\Tridiagonalization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Householder\BlockHouseholder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Householder\Householder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Householder\HouseholderSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Householder\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\BasicPreconditioners.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\BiCGSTAB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\ConjugateGradient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\IncompleteCholesky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\IncompleteLUT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\IterativeSolverBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\LeastSquareConjugateGradient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\IterativeLinearSolvers\SolveWithGuess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Jacobi\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\Jacobi\Jacobi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\LU\arch\InverseSize4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\LU\Determinant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\LU\FullPivLU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\LU\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\LU\InverseImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\LU\PartialPivLU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\misc\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\misc\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\misc\Kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\misc\RealSvd2x2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\OrderingMethods\Amd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\OrderingMethods\Eigen_Colamd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\OrderingMethods\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\OrderingMethods\Ordering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\QR\ColPivHouseholderQR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\QR\CompleteOrthogonalDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\QR\FullPivHouseholderQR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\QR\HouseholderQR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\QR\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCholesky\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCholesky\SimplicialCholesky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCholesky\SimplicialCholesky_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\AmbiVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\CompressedStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\ConservativeSparseSparseProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseAssign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseColEtree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseCompressedBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseCwiseBinaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseCwiseUnaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseDenseProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseDiagonalProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseDot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseFuzzy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseMatrixBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparsePermutation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseRedux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseRef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseSelfAdjointView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseSolverBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseSparseProductWithPruning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseTranspose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseTriangularView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\SparseView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseCore\TriangularSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLUImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_column_bmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_column_dfs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_copy_to_ucol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_heap_relax_snode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_kernel_bmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_Memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_panel_bmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_panel_dfs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_pivotL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_pruneL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_relax_snode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_Structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_SupernodalMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseLU\SparseLU_Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseQR\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SparseQR\SparseQR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SVD\BDCSVD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SVD\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SVD\JacobiSVD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SVD\SVDBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\Eigen\src\SVD\UpperBidiagonalization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\ComputerVisionUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\ArmFeedforward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\BangBangController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\ControlAffinePlantInversionFeedforward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\DifferentialDriveAccelerationLimiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\DifferentialDriveFeedforward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\DifferentialDriveWheelVoltages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\ElevatorFeedforward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\HolonomicDriveController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\ImplicitModelFollower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\LinearPlantInversionFeedforward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\LinearQuadraticRegulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\LTVDifferentialDriveController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\LTVUnicycleController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\PIDController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\ProfiledPIDController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\proto\ArmFeedforwardProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\proto\DifferentialDriveWheelVoltagesProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\proto\ElevatorFeedforwardProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\RamseteController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\SimpleMotorFeedforward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\struct\ArmFeedforwardStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\struct\DifferentialDriveWheelVoltagesStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\controller\struct\ElevatorFeedforwardStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\DARE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\EigenCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\AngleStatistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\DifferentialDrivePoseEstimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\ExtendedKalmanFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\KalmanFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\KalmanFilterLatencyCompensator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\MecanumDrivePoseEstimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\MerweScaledSigmaPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\PoseEstimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\SteadyStateKalmanFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\SwerveDrivePoseEstimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\UnscentedKalmanFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\estimator\UnscentedTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\filter\Debouncer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\filter\LinearFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\filter\MedianFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\filter\SlewRateLimiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\fmt\Eigen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\CoordinateAxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\CoordinateSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Pose2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Pose3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Pose2dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Pose3dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\QuaternionProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Rotation2dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Rotation3dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Transform2dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Transform3dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Translation2dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Translation3dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Twist2dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\proto\Twist3dProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Rotation2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Rotation3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Pose2dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Pose3dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\QuaternionStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Rotation2dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Rotation3dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Transform2dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Transform3dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Translation2dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Translation3dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Twist2dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\struct\Twist3dStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Transform2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Transform3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Translation2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Translation3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Twist2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\geometry\Twist3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\interpolation\TimeInterpolatableBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\ChassisSpeeds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\DifferentialDriveKinematics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\DifferentialDriveOdometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\DifferentialDriveWheelPositions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\DifferentialDriveWheelSpeeds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\Kinematics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\MecanumDriveKinematics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\MecanumDriveOdometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\MecanumDriveWheelPositions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\MecanumDriveWheelSpeeds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\Odometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\proto\ChassisSpeedsProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\proto\DifferentialDriveKinematicsProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\proto\DifferentialDriveWheelSpeedsProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\proto\MecanumDriveKinematicsProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\proto\MecanumDriveWheelPositionsProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\proto\MecanumDriveWheelSpeedsProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\proto\SwerveModulePositionProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\proto\SwerveModuleStateProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\struct\ChassisSpeedsStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\struct\DifferentialDriveKinematicsStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\struct\DifferentialDriveWheelSpeedsStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\struct\MecanumDriveKinematicsStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\struct\MecanumDriveWheelPositionsStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\struct\MecanumDriveWheelSpeedsStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\struct\SwerveModulePositionStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\struct\SwerveModuleStateStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\SwerveDriveKinematics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\SwerveDriveOdometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\SwerveDriveWheelPositions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\SwerveModulePosition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\SwerveModuleState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\kinematics\WheelPositions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\MathUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\optimization\SimulatedAnnealing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\path\TravelingSalesman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\spline\CubicHermiteSpline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\spline\QuinticHermiteSpline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\spline\Spline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\spline\SplineHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\spline\SplineParameterizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\StateSpaceUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\Discretization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\LinearSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\LinearSystemLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\NumericalIntegration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\NumericalJacobian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\plant\DCMotor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\plant\LinearSystemId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\plant\proto\DCMotorProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\system\plant\struct\DCMotorStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\CentripetalAccelerationConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\DifferentialDriveKinematicsConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\DifferentialDriveVoltageConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\EllipticalRegionConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\MaxVelocityConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\MecanumDriveKinematicsConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\RectangularRegionConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\SwerveDriveKinematicsConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\constraint\TrajectoryConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\ExponentialProfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\proto\TrajectoryProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\proto\TrajectoryStateProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\Trajectory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\TrajectoryConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\TrajectoryGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\TrajectoryParameterizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\TrajectoryUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\frc\trajectory\TrapezoidProfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\abs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\acos.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\acosh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\asin.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\asinh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\atan.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\atan2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\atanh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\beta.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\binomial_coef.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\ceil.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\copysign.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\cos.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\cosh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\erf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\erf_inv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\exp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\expm1.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\factorial.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\find_exponent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\find_fraction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\find_whole.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\floor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\fmod.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\gcd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\gcem_options.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\hypot.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\incomplete_beta.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\incomplete_beta_inv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\incomplete_gamma.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\incomplete_gamma_inv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\inv_sqrt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\is_even.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\is_finite.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\is_inf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\is_nan.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\is_odd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\lbeta.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\lcm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\lgamma.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\lmgamma.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\log.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\log10.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\log1p.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\log2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\log_binomial_coef.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\mantissa.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\max.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\min.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\neg_zero.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\pow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\pow_integral.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\quadrature\gauss_legendre_30.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\quadrature\gauss_legendre_50.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\round.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\sgn.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\signbit.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\sin.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\sinh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\sqrt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\tan.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\tanh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\tgamma.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\gcem_incl\trunc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\acceleration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\angle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\angular_acceleration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\angular_jerk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\angular_velocity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\capacitance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\charge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\concentration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\conductance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\current.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\curvature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\data_transfer_rate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\density.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\dimensionless.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\energy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\force.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\formatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\frequency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\illuminance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\impedance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\inductance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\length.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\luminous_flux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\luminous_intensity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\magnetic_field_strength.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\magnetic_flux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\mass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\moment_of_inertia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\power.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\pressure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\radiation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\solid_angle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\substance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\temperature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\torque.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\velocity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\voltage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\units\volume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\unsupported\Eigen\src\MatrixFunctions\InternalHeaderCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\unsupported\Eigen\src\MatrixFunctions\MatrixExponential.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\unsupported\Eigen\src\MatrixFunctions\MatrixFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\unsupported\Eigen\src\MatrixFunctions\MatrixLogarithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\unsupported\Eigen\src\MatrixFunctions\MatrixPower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\unsupported\Eigen\src\MatrixFunctions\MatrixSquareRoot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\unsupported\Eigen\src\MatrixFunctions\StemFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\MathShared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\controller.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\geometry2d.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\geometry3d.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\kinematics.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\plant.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\spline.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\system.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\trajectory.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\wpimath\wpimath\protobuf\wpimath.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nerds\apriltag_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\fs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets_interfaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\frc\Errors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\dataflow\structures\Packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\estimation\CameraTargetRelation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\estimation\OpenCVHelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\estimation\RotTrlTransform3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\estimation\TargetModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\estimation\VisionEstimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\networktables\NTTopicSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\targeting\proto\MultiTargetPNPResultProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\targeting\proto\PhotonPipelineResultProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\targeting\proto\PhotonTrackedTargetProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\targeting\proto\PNPResultProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\targeting\MultiTargetPNPResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\targeting\PhotonPipelineResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\targeting\PhotonTrackedTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\photon\targeting\PNPResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photontargeting\geometry3d.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\simulation\PhotonCameraSim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\simulation\SimCameraProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\simulation\SimPhotonCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\simulation\SimVisionSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\simulation\SimVisionTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\simulation\VideoSimUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\simulation\VisionSystemSim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\simulation\VisionTargetSim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\PhotonCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\PhotonPoseEstimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\PhotonTargetSortMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\photon\PhotonUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\photonlib\PhotonVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui.ini" />
@@ -1539,5 +4317,92 @@
     <None Include="lib\wpiutil\wpi\circular_buffer.inc">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="apriltag.dll" />
+    <None Include="lib\wpimath\Eigen\src\plugins\ArrayCwiseBinaryOps.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\ArrayCwiseUnaryOps.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\BlockMethods.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\CommonCwiseBinaryOps.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\CommonCwiseUnaryOps.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\IndexedViewMethods.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\InternalHeaderCheck.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\MatrixCwiseBinaryOps.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\MatrixCwiseUnaryOps.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\Eigen\src\plugins\ReshapedMethods.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\controller\LinearQuadraticRegulator.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\estimator\ExtendedKalmanFilter.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\estimator\KalmanFilter.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\estimator\PoseEstimator.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\estimator\SteadyStateKalmanFilter.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\estimator\UnscentedKalmanFilter.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\geometry\Pose2d.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\geometry\Rotation2d.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\geometry\Transform2d.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\geometry\Translation2d.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\geometry\Translation3d.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\kinematics\Odometry.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\kinematics\SwerveDriveKinematics.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\kinematics\SwerveDriveOdometry.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\trajectory\constraint\SwerveDriveKinematicsConstraint.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\trajectory\ExponentialProfile.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\wpimath\frc\trajectory\TrapezoidProfile.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="opencv_world480.dll" />
+    <None Include="opencv_world480d.dll" />
+    <None Include="2024-cresendo.json" />
+    <None Include="lib\frc\WPIErrors.mac" />
+    <None Include="lib\frc\WPIWarnings.mac" />
   </ItemGroup>
 </Project>

@@ -3,6 +3,7 @@
 #include <nlohmann/json.hpp>
 
 #include <cassert>
+#include <filesystem>
 #include <fstream>
 #include <sstream>
 #include <string>

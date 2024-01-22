@@ -91,33 +91,6 @@ void nerds::gui::setup_imgui_styles() {
 }
 
 void nerds::gui::render(bool* show_window) {
-
-		//const static zorua::textures::Texture cgear_texture = zorua::textures::load_texture("res/img/cresendo_cgear.png");
-
-		//const static float aspect_ratio = (float)cgear_texture.width / cgear_texture.height;
-
-		////ImGui::SetNextWindowSizeConstraints(ImVec2(500, 500), ImVec2(FLT_MAX, FLT_MAX), [](ImGuiSizeCallbackData* data) {
-		////	float aspect_ratio = *(float*)data->UserData;
-		////	data->DesiredSize.y = (float)(int)(data->DesiredSize.x / aspect_ratio);
-		////	}, (void*)&aspect_ratio);
-
-		//ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
-		//static ImGuiWindowFlags flags = ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings;
-		//const ImGuiViewport* viewport = ImGui::GetMainViewport();
-		//ImGui::SetNextWindowPos(true ? viewport->WorkPos : viewport->Pos);
-		//ImGui::SetNextWindowSize(true ? viewport->WorkSize : viewport->Size);
-
-		//if (ImGui::Begin("FGear", NULL, flags)) {
-		//	const ImVec2 region_available = ImGui::GetContentRegionAvail();
-
-		//	ImVec2 scaled_cgear_texture_size = ImVec2(aspect_ratio * cgear_texture.height, region_available.y);
-
-		//	ImGui::Image((ImTextureID)(intptr_t)cgear_texture.texture, scaled_cgear_texture_size);
-		//} ImGui::End();
-
-		//ImGui::PopStyleVar();
-
-		//return;
     static ImGuiDockNodeFlags dockspace_flags = ImGuiDockNodeFlags_None;
 
     ImGuiWindowFlags window_flags = ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoDocking;
@@ -126,13 +99,14 @@ void nerds::gui::render(bool* show_window) {
     ImGui::SetNextWindowSize(viewport->WorkSize);
     ImGui::SetNextWindowViewport(viewport->ID);
     ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0.0f);
-    ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0,0));
     window_flags |= ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove;
     window_flags |= ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoNavFocus;
 
     ImGui::Begin("DockSpace", show_window, window_flags);
 
-    ImGui::PopStyleVar(2);
+    ImGui::PopStyleVar(3);
 
     // Submit the DockSpace
     ImGuiIO& io = ImGui::GetIO();
@@ -141,34 +115,18 @@ void nerds::gui::render(bool* show_window) {
         ImGuiID dockspace_id = ImGui::GetID("DockSpace");
         ImGui::DockSpace(dockspace_id, ImVec2(0.0f, 0.0f), dockspace_flags);
     }
-	static bool show_alerts_box_widget = true;
-	static bool show_game_field_widget = true;
 
-	const static std::vector<Alert> alerts = Alert::alerts_from_raw_data(nt_fgear_table->GetRaw("alerts", {}) );
+	Widgets::get_instance()->render_game_field();
+	Widgets::get_instance()->render_swerve_drive();
 
-	if(show_alerts_box_widget) nerds::gui::widget_alerts_box(&show_alerts_box_widget, alerts);
-	if(show_game_field_widget) nerds::gui::widget_game_field(&show_game_field_widget);
-	ImGui::ShowMetricsWindow();
+	//static bool show_alerts_box_widget = true;
+	//static bool show_game_field_widget = true;
 
-    if (ImGui::BeginMenuBar())
-    {
-        if (ImGui::BeginMenu("Widgets"))
-        {
-			if (ImGui::MenuItem("Alerts Box", "", show_alerts_box_widget)) { show_alerts_box_widget = !show_alerts_box_widget; }
-    //        if (ImGui::MenuItem("Flag: NoDockingOverCentralNode", "", (dockspace_flags & ImGuiDockNodeFlags_NoDockingOverCentralNode) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoDockingOverCentralNode; }
-    //        if (ImGui::MenuItem("Flag: NoDockingSplit", "", (dockspace_flags & ImGuiDockNodeFlags_NoDockingSplit) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoDockingSplit; }
-    //        if (ImGui::MenuItem("Flag: NoUndocking", "", (dockspace_flags & ImGuiDockNodeFlags_NoUndocking) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoUndocking; }
-    //        if (ImGui::MenuItem("Flag: NoResize", "", (dockspace_flags & ImGuiDockNodeFlags_NoResize) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoResize; }
-    //        if (ImGui::MenuItem("Flag: AutoHideTabBar", "", (dockspace_flags & ImGuiDockNodeFlags_AutoHideTabBar) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_AutoHideTabBar; }
-    //        ImGui::Separator();
+	//const static std::vector<Alert> alerts = Alert::alerts_from_raw_data(nt_fgear_table->G/etRaw("alerts", {}) );
 
-    //        if (ImGui::MenuItem("Close", NULL, false, show_window != NULL))
-    //            *show_window = false;
-            ImGui::EndMenu();
-        }
-
-        ImGui::EndMenuBar();
-    }
+	//if(show_alerts_box_widget) nerds::gui::widget_alerts_box(&show_alerts_box_widget, alerts);
+	//if(show_game_field_widget) nerds::gui::widget_game_field(&show_game_field_widget);
+	//ImGui::ShowMetricsWindow();
 
     ImGui::End();
 }

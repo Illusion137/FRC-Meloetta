@@ -3,10 +3,9 @@
 #include <networktables/NetworkTableInstance.h>
 #include <networktables/NetworkTableListener.h>
 #include <networktables/NetworkTable.h>
-#include <networktables/StructArrayTopic.h>
-#include <networktables/StructTopic.h>
+#include <networktables/DoubleTopic.h>
 
 namespace nerds {
     inline nt::NetworkTableInstance nt_inst = nt::NetworkTableInstance::GetDefault();
-    inline std::shared_ptr<nt::NetworkTable> nt_fgear_table = nt_inst.GetTable("FGear");
+    inline std::shared_ptr<nt::NetworkTable> nt_inst_table = nt_inst.GetTable("Meloetta");
 }

@@ -1,7 +1,6 @@
 //https://github.com/ocornut/imgui/blob/docking/examples/example_glfw_opengl3/main.cpp
 
-#include "vendor/stb_image.h"
-
+#define UNIT_LIB_DISABLE_IOSTREAM
 #define IMGUI_ENABLE_FREETYPE
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
@@ -14,6 +13,7 @@
 #include <thread>
 
 #include <nlohmann/json.hpp>
+#include "vendor/stb_image.h"
 #include "utils/fs.h"
 
 #include "nerds/network_table_utils.h"
@@ -43,6 +43,8 @@ inline void glfw_load_window_icon(GLFWwindow* window)
 
 int main(int, char**)
 {
+    nerds::webcam_apriltag_vision_test();
+    return 0;
     glfwSetErrorCallback(glfw_error_callback);
     if (!glfwInit())
         return 1;
@@ -108,7 +110,7 @@ int main(int, char**)
     int nt_host_type_index = nt_json["host_type"].get<int>();
     std::string nt_host_type = (nt_json["host_types"][nt_host_type_index]).get<std::string>();
     std::cout << nt_host_type << '\n';
-    nerds::nt_inst.StartClient4("First-CGear Client");
+    nerds::nt_inst.StartClient4("Meloetta Client");
 
     if (nt_host_type == "DriverStation") {
         nerds::nt_inst.SetServerTeam(NERDS_TEAM_NUMBER);
